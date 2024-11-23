@@ -1,6 +1,8 @@
-const array = [1,2,3,4]
+var something = function(arr, fn) {
+  for(let i = 0; i < arr.length; ++i)
+    arr[i] = fn(arr[i], i)
+  return arr
+}
 
-const map = array.map(x  => x + 2)
-
-console.log(map)
+console.log(something([1,2,3,4]))
 
