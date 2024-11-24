@@ -3,10 +3,10 @@ var filter = function(arr, fn){
 }
 
 var isEven = function(num){
-  return num % 2 ===0 
+  return num > 10
 }
 
-var numbers = [2,3,4,5,6]
+var numbers = [0,10,20,30]
 
 var evenNumebrs = filter(numbers, isEven);
 
