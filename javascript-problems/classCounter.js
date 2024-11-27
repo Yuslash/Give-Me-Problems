@@ -5,12 +5,12 @@ class Counter {
     this.count = init
   }
 
-  increment(){
-      return ++this.count
+  increment() {
+    return ++this.count
   }
 
   decrement() {
-    return --this.count 
+    return --this.count
   }
 
   reset() {
@@ -19,6 +19,7 @@ class Counter {
   }
 
 }
+
 
 const counter = new Counter(5)
 console.log(counter.increment())
