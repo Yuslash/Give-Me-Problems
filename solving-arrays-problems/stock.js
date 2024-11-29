@@ -1,27 +1,24 @@
 var stock = function(prices) {
+
+  let min_Prices = Infinity
+  let max_Profit = 0
+
+  for (let i = 0; i < prices.length; i++) {
+    if (prices[i] < min_Prices) {
+      min_Prices = prices[i]
+    } else {
+      let profit = prices[i] - min_Prices
+
+      if (profit > max_Profit) {
+        max_Profit = profit
+      }
+    }
+  }
+
+  return max_Profit
+
 }
-
-min_prices = infinity
-max_profit = 0
-
-// we need two variables which is min_prices and max_profit
-
-// you can see first 
-if (prices[i] < min_prices) //if this true then
-{
-  min_prices = prices[i]
-}
-
-currentValue = prices[i] //now you cansee that prices i is also 7 right
-
-current_profit = currentValue - min_prices
-
-if (currentProfit > max_profit) {
-  max_profit = currentProfit
-}
-
-//but it should be in loop because its should have to check every indieces from the array
 
 var prices = [7, 1, 5, 3, 6, 4]
 
-stock(prices)
+console.log(stock(prices))
