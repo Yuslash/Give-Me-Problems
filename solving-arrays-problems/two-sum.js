@@ -9,7 +9,7 @@ var twoSum = function(nums, target) {
   return []
 }
 
-var nums = [2, 7, 11, 15]
+var nums = [2, 17, 7, 15]
 
 var target = 9
 
