@@ -4,7 +4,7 @@ var bobPlaylist = function(n) {
   for (let i = 0; i < n.length; i++) {
     let singer = n[i] //we are taking the indices
     if (singerCount[singer]) { // checking if that is same
-      singerCount[singer]++     //if that true then it will continue to the next iteration
+      singerCount[singer]++   //It will add the object and the value example in the array the maxCount of the number is 1 so it will added like 1:2, 2:2, 4:1     
     } else {
       singerCount[singer] = 1
     }
@@ -20,7 +20,7 @@ var bobPlaylist = function(n) {
 
   for (let count of Object.values(singerCount)) {
     if (count === maxCount) {
-      favouirteSinger++
+      favouirteSinger++ //add the maxCount of the singer
     }
   }
 
