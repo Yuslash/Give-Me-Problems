@@ -1,8 +1,8 @@
-let singerCount = {}
+var bobPlaylist = function(n) {
 
-var boob = function(n) {
+  let singerCount = {}
 
-  for (let i = 0; i <= n.length; i++) {
+  for (let i = 0; i < n.length; i++) {
 
     let singer = n[i]
 
@@ -13,14 +13,28 @@ var boob = function(n) {
     } else {
 
       singerCount[singer] = 1
+
     }
 
   }
 
-  return singerCount
+  let maxCount = Math.max(...Object.values(singerCount))
+
+  let faviourite = 0
+
+  for (let count of Object.values(singerCount)) {
+
+    if (count === maxCount) {
+
+      faviourite++
+
+    }
+
+  }
+  return faviourite
 
 }
 
-let n = [1, 1, 2, 2, 4]
+let n = [1, 1, 1, 2, 2, 2, 4, 4, 4, 4, 4]
 
-console.log(boob(n))
+console.log(bobPlaylist(n))

@@ -19,7 +19,7 @@ var bobPlaylist = function(n) {
 
   //step 2 find the maximum count
 
-  let maxCount = Math.max(...Object.values(singerCount))
+  let maxCount = Math.max(...Object.values(singerCount)) //this code will extract the value only the math.max will get the maximum value from the array and the spread operator will used to pass the array elements
 
   // step 3 count how many singers have the maximum count
 
@@ -38,6 +38,8 @@ var bobPlaylist = function(n) {
 
 }
 
-let n = [1, 1, 2, 2, 4]
+n = [1, 1, 1, 2, 2, 2, 2, 4]
 
-console.log(bobPlaylist(n))
+bobPlaylist(n)
+
+console.log(maxCount)
