@@ -2,22 +2,19 @@ var ExceptSelf = function(nums) {
 
   let pre = 1
   let post = 1
-  let result = []
+  let result = new Array(nums.length).fill(1)
 
-  for (let i = 0; i < nums.length; i++) {
-    result[i] = 1
-  }
 
   //updating the prefix value
   for (let i = 0; i < nums.length; i++) {
+    result[i] = pre
     pre = pre * nums[i]
-    result[i] = result[i] * pre
   }
 
   //populating the result by multiply with post
-  for (let i = nums - 1; nums <= 0; i--) {
-    post = post * nums[i]
+  for (let i = nums.length - 1; i >= 0; i--) {
     result[i] = result[i] * post
+    post = post * nums[i]
   }
 
   return result
