@@ -1,0 +1,15 @@
+{
+  "name": "simple-problems",
+  "version": "1.0.0",
+  "main": "compareTiplets.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}

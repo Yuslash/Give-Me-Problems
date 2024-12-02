@@ -20,7 +20,4 @@ var compareTiplets = function(a, b) {
 
 }
 
-let a = [5, 6, 7]
-let b = [3, 6, 10]
-
-console.log(compareTiplets(a, b))
+module.exports = compareTiplets
