@@ -6,13 +6,15 @@ var maximumSubarray = function(nums) {
 
   for (let i = 0; i < nums.length; i++) {
 
-    if (cur_sum < nums[i]) { // initaily we are checking that if the value is less then nums[i] ex if -2 < -3 then yes so the cur_sum will be -2 
+    let temp = cur_sum + nums[i]
+
+    if (temp < nums[i]) { // initaily we are checking that if the value is less then nums[i] ex if -2 < -3 then yes so the cur_sum will be -2 
 
       cur_sum = nums[i] //so see here the cur_sum will be -2 after
 
     } else {
 
-      cur_sum = cur_sum + nums[i] // if the cur_sum is not greater then cur_sum will have the two sum added cur_sum and nums[i]
+      cur_sum = temp // if the cur_sum is not greater then cur_sum will have the two sum added cur_sum and nums[i]
     }
 
     if (cur_sum > max_sum) { // this condition will check whether the cur_sum is greater than max_sum if it is then it will update to the max_sum
