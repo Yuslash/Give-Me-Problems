@@ -5,7 +5,6 @@
 //actually if the nums[mid] is less then the mid - 1 then return the nums[mid]
 //or if nums[mid]  is greater then mid + 1 then return the nums[mid]
 
-
 function findMin(arr) {
 
   let leftPointer = 0
@@ -15,28 +14,16 @@ function findMin(arr) {
 
     let mid = Math.floor((leftPointer + rightPointer) / 2)
 
-    if (arr[mid] < arr[mid - 1]) {
-
-      return arr[mid]
-    }
-    else if (arr[mid] > arr[mid + 1]) {
-
-      return arr[mid + 1]
-    }
-    else if (arr[leftPointer] < arr[mid]) {
-
+    if (arr[mid] > arr[rightPointer]) {
       leftPointer = mid + 1
-
     } else {
-
-      rightPointer = mid - 1
-
+      rightPointer = mid
     }
   }
 
-  return -1
+  return arr[leftPointer]
 }
 
-let arr = [4, 5, 6, 7, 0, 1, 2]
+let arr = [11, 13, 15, 17]
 
 console.log(findMin(arr))
