@@ -16,14 +16,18 @@ var diagonalDifference = function(size) {
 
 let size = 3
 
-console.log(diagonalDifference(size))
+//console.log(diagonalDifference(size))
 
 let squre = []
 
 for (let i = 0; i < 3; i++) {
+
   squre[i] = []
-  for (let j = 0; j < 4; j++) {
+
+  for (let j = 0; j < 1; j++) {
+
     squre[i][j] = 0
+
   }
 }
 
