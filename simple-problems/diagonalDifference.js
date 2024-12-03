@@ -56,7 +56,7 @@ var additionDigaonal = function(matrix) {
     secondDiagonal += matrix[i][matrix.length - 1 - i]
   }
 
-  difference = mainDiagonal - secondDiagonal
+  difference = Math.abs(mainDiagonal - secondDiagonal)
   return difference
 
 }
