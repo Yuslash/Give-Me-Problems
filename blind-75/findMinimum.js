@@ -9,3 +9,6 @@ let nums = [1, 2, 3, 4, 5, 6, 7]
 let k = 3
 
 rotationArray(nums, k)
+
+const arr = ['sibi', 'krishna', 'EvaElfie']
+console.log(arr, arr.pop())
