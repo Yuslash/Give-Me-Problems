@@ -1,0 +1,15 @@
+let n = 5
+let village = "H...H"
+
+let gridArr = []
+for (let i = 0; i < village.length; i++) {
+  gridArr[i] = village[i]
+}
+
+for (let i = 0; i < 6; i++) {
+  if (i === 4) {
+    console.log("yeah we found 4")
+  }
+
+  console.log(i)
+}
