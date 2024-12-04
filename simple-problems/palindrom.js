@@ -6,4 +6,16 @@ let sumString = num.toString()
 //now we should seperate those element by splitini with ""
 let splitString = sumString.split("")
 
-console.log(splitString)
+let reverseString = splitString.reverse()
+
+let joinString = reverseString.join("")
+
+if (sumString === joinString) {
+
+  console.log(true)
+
+} else {
+  console.log(false)
+}
+
+console.log(reverseString)
