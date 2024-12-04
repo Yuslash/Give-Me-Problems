@@ -20,10 +20,12 @@ var plusMinus = function(arr) {
   let negativeDecimal = (negative / arr.length).toFixed(6)
   let zeroDecimal = (zero / arr.length).toFixed(6)
 
-  console.log(`${postiveDecimal}\n${negativeDecimal}\n${zeroDecimal}`)
+  console.log(postiveDecimal)
+  console.log(negativeDecimal)
+  console.log(zeroDecimal)
 
 }
 
 
-let arr = [1, 1, 0, -1, -1]
+let arr = [1, 2, 3, -1, -2, -3, 0, 0]
 plusMinus(arr)
