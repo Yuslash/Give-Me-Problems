@@ -1,13 +1,13 @@
 // how to replace house with (.)
-//
+//there are 2 people need house then 
 
-let n = ['.', 'H', '.', '.', '.']
+let n = ['H', '.', '.', '.', 'H']
+let need = 2
 
 for (let i = 0; i < n.length; i++) {
-  if (n[i] === 'H') {
-    if (i + 1 < n.length && n[i + 1] === '.') {
-      n[i + 1] = 'B'
-    }
+
+  if (n[i] === '.') {
+    n[i] = 'B'
   }
 
 }
