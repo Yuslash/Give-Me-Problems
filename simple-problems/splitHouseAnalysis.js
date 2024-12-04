@@ -11,12 +11,13 @@ for (let i = 0; i < village.length; i++) {
 //
 
 let isThereAnyHouseNearby = false
-for (let i = 0; i < n - 1; i++) {
+for (let i = 0; i < n - 1; i++) { // do you guys know why n - 1 its because there will condition down below in that there will like gridarr[i + 1] already if the maximu array length is 5 then it will check the 6 so there will problem so to avoid it will stop the looop before the last element
   if (gridArr[i] === 'H' && gridArr[i + 1] === 'H') {
     isThereAnyHouseNearby = true
     break
   }
 }
+
 
 // step 3
 // no the actions for those condition from the step 2
