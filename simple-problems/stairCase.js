@@ -1,13 +1,10 @@
-// how to staircase
+var main = function(n) {
 
-var stair = function(rows, columns) {
-
-
-  for (let i = 0; i < rows; i++) {
+  for (let i = 1; i <= n; i++) {
 
     let line = ''
 
-    for (let j = 0; j < columns; j++) {
+    for (let j = 1; j <= i; j++) {
 
       line += '#'
 
@@ -16,10 +13,9 @@ var stair = function(rows, columns) {
     console.log(line)
   }
 
-
 }
 
-let rows = 5
-let columns = 5
+let n = 4
 
-stair(rows, columns)
+main(n)
+
