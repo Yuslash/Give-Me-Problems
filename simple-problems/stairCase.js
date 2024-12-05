@@ -4,13 +4,20 @@ var main = function(n) {
 
     let line = ''
 
-    for (let j = 1; j <= i; j++) {
+    for (let j = 1; j <= n - i; j++) {
+
+      line += ''
+
+    }
+
+    for (let k = 1; k <= i; k++) {
 
       line += '#'
 
     }
 
     console.log(line)
+
   }
 
 }
@@ -18,4 +25,3 @@ var main = function(n) {
 let n = 4
 
 main(n)
-
