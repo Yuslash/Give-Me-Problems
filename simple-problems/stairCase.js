@@ -6,7 +6,7 @@ var main = function(n) {
 
     for (let j = 1; j <= n - i; j++) {
 
-      line += ''
+      line += ' '
 
     }
 
@@ -25,3 +25,4 @@ var main = function(n) {
 let n = 4
 
 main(n)
+
