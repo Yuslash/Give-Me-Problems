@@ -1,6 +1,7 @@
 var main = function(str) {
 
   let currentIndex = 0
+  let result = ""
 
   for(let i = 0; i < 2 - 1 ; i++) {
 
