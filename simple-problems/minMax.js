@@ -12,12 +12,14 @@ var main = function(arr) {
     
     for(let j = i + 1; j < arr.length; j++) {
 
-// but only the four digits we need to take how?
+// but only the four digits we need to take how? for four minimum and four maximum value
       
       if(arr[i] < arr[j]) {
 
-        minimum.push()
+        minimum.push(arr[i])
         
+      } else {
+        maximum.push(arr[i])
       }
          
     }
