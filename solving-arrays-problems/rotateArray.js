@@ -15,11 +15,11 @@ function rotateArray(arr, k) {
   
   // this will reverse the entire array
   main(0, n - 1)
-
-  // this is will rotate the elements 3 times becoz k = 3
+  
+  // this will swap or reverse the element from 0 to 2 which is 5,6,7 to 7,6,5. Why 2 because k = 3, k - 1 = 2
   main(0, k - 1)
 
-  // again we are gonna reverse the entire array
+  // this will swap or reverse the element from 3 to 6 which is 4,3,2,1 to 1,2,3,4
   main(k, n - 1)
 
   return arr
