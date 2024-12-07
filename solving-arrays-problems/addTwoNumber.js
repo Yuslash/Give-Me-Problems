@@ -1,8 +1,26 @@
 var main = function(l1, l2) {
+  
+  let reversedl1 = []
+  let reversedl2 = []
+  let final = 0
 
- k %= l1.length
+  for(let i = l1.length - 1; i >=0; i--) {
+     reversedl1.push(l1[i]) 
+     reversedl2.push(l2[i]) 
+  }
 
-  console.log(k)
+  let l1value = Number(reversedl1.join(""));
+  let l2value = Number(reversedl2.join(""));
+
+  final = (l1value + l2value).toString()
+  
+  let result = []
+
+  for(let j = final.length - 1; j >= 0; j--) {
+    result.push(Number(final[j])) 
+  }
+
+  console.log(result)
 
 }
 
