@@ -29,4 +29,10 @@ let k = 14
 let l1 = [2,4,3]
 let l2 = [5,6,4]
 
+let simpleReveresel1 = [...l1].reverse();
+let simpleReveresel2 = [...l2].reverse();
+
 main(l1,l2)
+
+console.log(simpleReveresel1)
+console.log(simpleReveresel2)
