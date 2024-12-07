@@ -6,7 +6,10 @@ var main = function(l1, l2) {
 
   for(let i = l1.length - 1; i >=0; i--) {
      reversedl1.push(l1[i]) 
-     reversedl2.push(l2[i]) 
+  }
+
+  for(let i = l2.length - 1; i >= 0; i--) {
+    reversedl2.push(l2[i])
   }
 
   let l1value = Number(reversedl1.join(""));
@@ -34,5 +37,5 @@ let simpleReveresel2 = [...l2].reverse();
 
 main(l1,l2)
 
-console.log(simpleReveresel1)
-console.log(simpleReveresel2)
+//console.log(simpleReveresel1)
+//console.log(simpleReveresel2)
