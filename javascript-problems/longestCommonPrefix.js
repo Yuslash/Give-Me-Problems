@@ -1,32 +1,25 @@
-var main = function(str) {
+function longestCommonPrefixer(arr) {
+ 
+  if(!arr.length) return ""
 
-  let currentIndex = 0
-  let result = ""
+  arr.sort()
 
-  for(let i = 0; i < 2 - 1 ; i++) {
+  let left = arr[0]
+  let right = arr[arr.length - 1]
+  let prefix = ""
 
-      if(str[i][currentIndex] === str[i+1][currentIndex]) {
-
-        console.log("yeah its equal")
-        currentIndex += 1
+  for(let i = 0; i < Math.min(left.length, right.length); i++) {
+    if(left[i] === right[i]) {
+      prefix += left[i]
     } else {
-      console.log(str[i])
+      break
     }
-
   }
 
+  console.log(prefix) 
+  
 }
 
-let str = ["flower", "flow"]
+let arr =["flower", "flow", "flight"]
 
-main(str)
-//
-//var anotherMain = function(str) {
-//
-//  console.log(str[0][0])
-//
-//}
-//
-//let str = ["flower", "flow"]
-//
-//anotherMain(str)
+longestCommonPrefixer(arr)
