@@ -1,6 +1,6 @@
-let arr = [1, 2, 2, 3, 4, 4, 5]
+let arr = [1, 1, 2]
 let uniqueNummber = []
-let duplicateNumber = []
+//  let duplicateNumber = []
 
 for (let i = 0; i < arr.length; i++) {
   let isDuplicate = false
@@ -8,7 +8,7 @@ for (let i = 0; i < arr.length; i++) {
   for (let j = 0; j < uniqueNummber.length; j++) {
     if (arr[i] === uniqueNummber[j]) {
       isDuplicate = true
-      duplicateNumber.push(i)
+      //   duplicateNumber.push(i)
       break
     }
   }
@@ -19,4 +19,4 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(uniqueNummber)
-console.log(...duplicateNumber)
+console.log(uniqueNummber.length)
