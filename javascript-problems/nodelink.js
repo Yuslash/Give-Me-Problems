@@ -14,6 +14,9 @@ class LinkedList {
   }
 
   // Insert first
+  insertFirst(data) {
+    this.head = new Node(data, this.head)
+  }
 
   // insert lastNode
 
@@ -28,15 +31,22 @@ class LinkedList {
   // print the list
 }
 
-export default Node
+const ll = new LinkedList()
 
-const n1 = {
-  data: 200
-}
+ll.insertFirst(200,200)
 
-const n2 = {
-  data: 300
-}
+console.log(ll)
 
-n1.next = n2
+
+//export default Node
+//
+//const n1 = {
+//  data: 200
+//}
+//
+//const n2 = {
+//  data: 300
+//}
+//
+//n1.next = n2
 
