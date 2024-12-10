@@ -7,10 +7,28 @@ class Node {
   }
 }
 
-const node = new Node(200, 390)
+class LinkedList {
+  constructor() {
+    this.head = null
+    this.size = 0
+  }
 
-console.log(node)
+  // Insert first
 
+  // insert lastNode
+
+  // insert at index
+  
+  // get at index
+
+  // remove at index
+
+  //clear list
+
+  // print the list
+}
+
+export default Node
 
 const n1 = {
   data: 200
