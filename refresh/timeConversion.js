@@ -11,9 +11,9 @@ function timeConversion(s) {
     hour = 0
   }
 
+  console.log(hour)
   return `${hour.toString().padStart(2, '0')}${rest}`
 
 }
 
-console.log(timeConversion("07:05:45PM"))
-
+console.log(timeConversion("07:05:45AM"))
