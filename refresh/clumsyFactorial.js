@@ -12,7 +12,8 @@ function main(n) {
     if (index % 4 === 0) {
       stack.push(stack.pop() * n) // so you can see that simple it is pushing the value tha caluculate what is caluculate is stack.pop() will take the last elemenet form the stack so iteration the remaining last element is 4 only 4 is availbe later we will get the next iteration value n-- which is 3 so next time it will take 3
     } else if (index % 4 === 1) {
-      stack.push(Math.floor(stack.pop() / n)) // why we are using the Math.floor() to return integer division why example if 10 /3 then 3.3333 so we are getting floating point to avoid that we are using math.floor() it will give as the integer 
+      const last = stack.pop()
+      stack.push(Math.floor(last / n)) // why we are using the Math.floor() to return integer division why example if 10 /3 then 3.3333 so we are getting floating point to avoid that we are using math.floor() it will give as the integer 
     } else if (index % 4 === 2) {
       stack.push(n) // why not stack.push(stack.pop() + n) because we are not calculating here we are just assigning the operator in order
     } else if (index % 4 === 3) {
