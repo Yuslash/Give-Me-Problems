@@ -30,4 +30,5 @@ function main(n) {
 }
 
 console.log(main(4))
+console.log(main(10))
 
