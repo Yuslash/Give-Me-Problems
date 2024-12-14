@@ -21,4 +21,7 @@
 # print(a ^ b)
 
 # now left shift and rigt shift but i still dont understand that
-
+num = 11
+binary_with_prefix = bin(num)
+binary_bits = bin(num)[2:]
+print(binary_bits)
