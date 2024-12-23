@@ -1,17 +1,17 @@
 s = "pwwkew"
 
-count = 0
+char_set = set()
+max_length = 0
+start = 0
 
-for i in range(len(s)):
+for end in range(len(s)):
 
-    is_unqiue = True
-    
-    for j in range(len(s)):
-        if i != j and s[i] == s[j]:
-            is_unqiue = False
-            break
-        
-    if is_unqiue:
-        count += 1
+    while s[end] in char_set:
+        char_set.remove(s[start])
+        start += 1
 
-print(count)
+    char_set.add(s[end])
+
+    max_length = max(max_length, end - start + 1)
+
+print(max_length)
